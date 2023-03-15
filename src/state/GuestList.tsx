@@ -17,7 +17,9 @@ const GuestList: React.FC = () =>
             <h1>Guest List</h1>
             <ul>
                 {guests.map((guest) => (
-                    <li>{guest}</li>
+                    <li key={guest}>
+                        {guest}
+                    </li>
                 ))}
             </ul>
             <input
