@@ -19,7 +19,7 @@ const UserSearch = () =>
             return user.name === name
         })
 
-        console.log(foundUser)
+        setUser(foundUser)
     }
 
     return (
