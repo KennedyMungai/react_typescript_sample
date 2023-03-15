@@ -1,11 +1,11 @@
-import { FC } from "react"
+import { FC, ReactNode } from "react"
 
 
 interface ChildProps 
 {
     color: string,
     onClick: () => void,
-    children: React.ReactNode
+    children: ReactNode
 }
 
 const Child: FC<ChildProps> = ({ color, onClick, children }) =>
