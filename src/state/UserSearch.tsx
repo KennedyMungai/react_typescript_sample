@@ -7,14 +7,19 @@ const users = [
     { name: "Michael", age: 19 },
 ]
 
-const clickHandler = () =>
-{
-
-}
-
 const UserSearch = () =>
 {
     const [name, setName] = useState<string>("")
+
+    const clickHandler = () =>
+    {
+        const foundUser = users.find((user) => 
+        {
+            return user.name === name
+        })
+
+        console.log(foundUser)
+    }
 
     return (
         <div>
@@ -30,11 +35,6 @@ const UserSearch = () =>
             >
                 Find User
             </button>
-            <div className="">
-                <h3>User Details</h3>
-                <p>Name: </p>
-                <p>Age: </p>
-            </div>
         </div>
     )
 }
