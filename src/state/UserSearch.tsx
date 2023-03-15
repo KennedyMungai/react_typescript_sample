@@ -3,8 +3,6 @@ import React, { useState } from 'react'
 
 const UserSearch = () =>
 {
-    const [name, setName] = useState<string>("")
-
     return (
         <div>
             <h1>Find User</h1>
