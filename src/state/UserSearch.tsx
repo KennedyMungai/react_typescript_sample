@@ -21,7 +21,11 @@ const UserSearch = () =>
                 value={name}
                 onChange={e => setName(e.target.value)}
             />
-            <button>Find</button>
+            <button
+                onClick={clickHander}
+            >
+                Find User
+            </button>
             <div className="">
                 <h3>User Details</h3>
                 <p>Name: </p>
