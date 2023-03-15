@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom';
-import EventComponent from './events/EventComponent';
+import EventComponentWithRefs from './events/EventComponentWithRefs';
 
 type Props = {}
 
@@ -8,7 +8,7 @@ const App = (props: Props) =>
     return (
         <div>
             {/* <UserSearch /> */}
-            <EventComponent />
+            <EventComponentWithRefs />
         </div>
     )
 }
