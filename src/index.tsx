@@ -1,4 +1,5 @@
 import ReactDOM from 'react-dom'
+import Parent from './props/Parent'
 
 type Props = {}
 
@@ -6,7 +7,7 @@ const App = (props: Props) =>
 {
     return (
         <div>
-            <h1>Hi There!</h1>
+            <Parent />
         </div>
     )
 }
