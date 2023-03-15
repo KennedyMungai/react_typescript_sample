@@ -1,4 +1,4 @@
-import { ChangeEvent } from "react"
+import { ChangeEvent, DragEvent } from "react"
 
 const EventComponent: React.FC = () =>
 {
@@ -7,9 +7,9 @@ const EventComponent: React.FC = () =>
         console.log(e.target.value)
     }
 
-    const onDragStart = () =>
+    const onDragStart = (event: DragEvent<HTMLDivElement>) =>
     {
-        console.log("I'm being dragged")
+        console.log(event)
     }
 
     return (
@@ -18,7 +18,7 @@ const EventComponent: React.FC = () =>
                 type="text"
                 onChange={onChangeHandler}
             />
-            <div className="" draggable onDragStart={onDragStart}>Drag Me</div>
+            <div draggable onDragStart={onDragStart}>Drag Me</div>
         </>
 
     )
