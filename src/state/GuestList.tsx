@@ -8,7 +8,8 @@ const GuestList: React.FC = () =>
 
     const clickHandler = () => 
     {
-
+        setGuests([...guests, name])
+        setName("")
     }
 
     return (
