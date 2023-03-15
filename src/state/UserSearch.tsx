@@ -1,6 +1,13 @@
 import React, { useState } from 'react'
 
 
+const users = [
+    { name: "Sarah", age: 20 },
+    { name: "Alex", age: 21 },
+    { name: "Michael", age: 19 },
+]
+
+
 const UserSearch = () =>
 {
     return (
