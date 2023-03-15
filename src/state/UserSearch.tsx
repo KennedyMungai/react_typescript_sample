@@ -6,6 +6,7 @@ const UserSearch = () =>
     return (
         <div>
             <h1>Find User</h1>
+            <input type="text" placeholder='name' />
             <button>Find</button>
             <div className="">
                 <h3>User Details</h3>
