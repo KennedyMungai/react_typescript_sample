@@ -15,7 +15,12 @@ const UserSearch = () =>
     return (
         <div>
             <h1>Find User</h1>
-            <input type="text" placeholder='name' />
+            <input
+                type="text"
+                placeholder='name'
+                value={name}
+                onChange={e => setName(e.target.value)}
+            />
             <button>Find</button>
             <div className="">
                 <h3>User Details</h3>
