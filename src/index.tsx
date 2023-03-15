@@ -1,5 +1,6 @@
 import ReactDOM from 'react-dom';
 import UserSearch from './state/UserSearch';
+import EventComponent from './events/EventComponent';
 
 type Props = {}
 
@@ -7,7 +8,8 @@ const App = (props: Props) =>
 {
     return (
         <div>
-            <UserSearch />
+            {/* <UserSearch /> */}
+            <EventComponent />
         </div>
     )
 }
