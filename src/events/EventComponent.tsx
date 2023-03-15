@@ -9,7 +9,7 @@ const EventComponent: React.FC = () =>
 
     const onDragStart = () =>
     {
-
+        console.log("I'm being dragged")
     }
 
     return (
