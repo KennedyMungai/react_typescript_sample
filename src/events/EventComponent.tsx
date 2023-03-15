@@ -1,8 +1,4 @@
-import React from 'react'
-
-type Props = {}
-
-const EventComponent = (props: Props) =>
+const EventComponent: React.FC = () =>
 {
     return (
         <div>EventComponent</div>
