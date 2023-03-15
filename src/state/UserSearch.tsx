@@ -10,6 +10,7 @@ const users = [
 const UserSearch = () =>
 {
     const [name, setName] = useState<string>("")
+    const [user, setUser] = useState<{ name: string, age: number } | undefined>()
 
     const clickHandler = () =>
     {
