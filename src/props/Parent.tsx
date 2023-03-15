@@ -6,7 +6,7 @@ type Props = {}
 const Parent = (props: Props) =>
 {
     return (
-        <Child />
+        <Child color="Red" />
     )
 }
 
