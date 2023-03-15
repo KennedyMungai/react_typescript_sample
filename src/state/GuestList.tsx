@@ -6,6 +6,11 @@ const GuestList: React.FC = () =>
     const [name, setName] = useState<string>("")
     const [guests, setGuests] = useState<string[]>([])
 
+    const clickHandler = () => 
+    {
+
+    }
+
     return (
         <div>
             <h1>Guest List</h1>
