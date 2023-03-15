@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom';
-import GuestList from './state/GuestList';
+import UserSearch from './state/UserSearch';
 
 type Props = {}
 
@@ -7,7 +7,7 @@ const App = (props: Props) =>
 {
     return (
         <div>
-            <GuestList />
+            <UserSearch />
         </div>
     )
 }
