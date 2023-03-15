@@ -1,14 +1,19 @@
+import { FC } from "react"
+
 interface ChildProps 
 {
     color: string
 }
 
-const Child = ({ color }: ChildProps) =>
+const clickHandler = () => 
+{
+    console.log("I'm being clicked!!!")
+}
+
+const Child: FC<ChildProps> = ({ color }) =>
 {
     return (
-        <div>
-            <h1>I am the child component. I am a {color} colored individual</h1>
-        </div>
+        <button onClick={clickHandler}> Click Me</button>
     )
 }
 
