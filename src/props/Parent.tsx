@@ -5,7 +5,7 @@ type Props = {}
 const Parent = (props: Props) =>
 {
     return (
-        <Child color="Red" />
+        <Child color="Red" onClick={() => { console.log("I am being clicked!!!") }} />
     )
 }
 
