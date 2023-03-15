@@ -7,6 +7,10 @@ const users = [
     { name: "Michael", age: 19 },
 ]
 
+const clickHandler = () =>
+{
+
+}
 
 const UserSearch = () =>
 {
@@ -22,7 +26,7 @@ const UserSearch = () =>
                 onChange={e => setName(e.target.value)}
             />
             <button
-                onClick={clickHander}
+                onClick={clickHandler}
             >
                 Find User
             </button>
