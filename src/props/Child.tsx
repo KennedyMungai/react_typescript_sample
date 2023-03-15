@@ -14,6 +14,7 @@ const Child: FC<ChildProps> = ({ color, onClick, children }) =>
         <>
             {children}
             <button onClick={onClick}> Click Me</button>
+            {color}
         </>
     )
 }
