@@ -36,6 +36,10 @@ const UserSearch = () =>
             >
                 Find User
             </button>
+            <div className="">
+                <p>{user && user.name}</p>
+                <p>{user && user.age}</p>
+            </div>
         </div>
     )
 }
