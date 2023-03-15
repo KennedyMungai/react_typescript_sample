@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 
-type Props = {}
 
-const UserSearch = (props: Props) =>
+const UserSearch = () =>
 {
     return (
         <div>UserSearch</div>
