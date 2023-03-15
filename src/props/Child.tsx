@@ -1,15 +1,20 @@
 import { FC } from "react"
 
+
 interface ChildProps 
 {
     color: string,
-    onClick: () => void
+    onClick: () => void,
+    children: React.ReactNode
 }
 
-const Child: FC<ChildProps> = ({ color, onClick }) =>
+const Child: FC<ChildProps> = ({ color, onClick, children }) =>
 {
     return (
-        <button onClick={onClick}> Click Me</button>
+        <>
+            {children}
+            <button onClick={onClick}> Click Me</button>
+        </>
     )
 }
 
