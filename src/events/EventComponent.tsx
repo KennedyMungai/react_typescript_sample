@@ -1,9 +1,14 @@
 const EventComponent: React.FC = () =>
 {
+    const onChangeHandler = (e) =>
+    {
+        console.log(e)
+    }
+
     return (
         <input
             type="text"
-            onChange={e => console.log(e.target.value)}
+            onChange={onChangeHandler}
         />
     )
 }
