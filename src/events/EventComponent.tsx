@@ -9,7 +9,7 @@ const EventComponent: React.FC = () =>
 
     const onDragStart = (event: DragEvent<HTMLDivElement>) =>
     {
-        console.log(event)
+        console.log(event.target)
     }
 
     return (
