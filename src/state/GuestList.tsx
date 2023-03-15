@@ -14,6 +14,11 @@ const GuestList: React.FC = () =>
     return (
         <div>
             <h1>Guest List</h1>
+            <ul>
+                {guests.map((guest) => (
+                    <li>{guest}</li>
+                ))}
+            </ul>
             <input
                 type="text"
                 value={name}
