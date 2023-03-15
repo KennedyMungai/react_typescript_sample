@@ -2,13 +2,14 @@ import { FC } from "react"
 
 interface ChildProps 
 {
-    color: string
+    color: string,
+    onClick: () => void
 }
 
-const Child: FC<ChildProps> = ({ color }) =>
+const Child: FC<ChildProps> = ({ color, onClick }) =>
 {
     return (
-        <button onClick={clickHandler}> Click Me</button>
+        <button onClick={onClick}> Click Me</button>
     )
 }
 
