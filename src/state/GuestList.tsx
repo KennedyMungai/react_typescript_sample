@@ -3,6 +3,8 @@ import { useState } from "react"
 
 const GuestList: React.FC = () =>
 {
+    const [name, setName] = useState<string>("")
+
     return (
         <div>
             <h1>Guest List</h1>
