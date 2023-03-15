@@ -1,5 +1,5 @@
-import ReactDOM from 'react-dom'
-import Parent from './props/Parent'
+import ReactDOM from 'react-dom';
+import GuestList from './state/GuestList';
 
 type Props = {}
 
@@ -7,7 +7,7 @@ const App = (props: Props) =>
 {
     return (
         <div>
-            <Parent />
+            <GuestList />
         </div>
     )
 }
