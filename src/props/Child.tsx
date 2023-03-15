@@ -5,11 +5,6 @@ interface ChildProps
     color: string
 }
 
-const clickHandler = () => 
-{
-    console.log("I'm being clicked!!!")
-}
-
 const Child: FC<ChildProps> = ({ color }) =>
 {
     return (
