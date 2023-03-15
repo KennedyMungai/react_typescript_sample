@@ -1,6 +1,8 @@
+import { ChangeEvent } from "react"
+
 const EventComponent: React.FC = () =>
 {
-    const onChangeHandler = (e) =>
+    const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) =>
     {
         console.log(e)
     }
