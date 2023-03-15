@@ -5,7 +5,9 @@ type Props = {}
 const Child = (props: Props) =>
 {
     return (
-        <div>Child</div>
+        <div>
+            <h1>I am the child component</h1>
+        </div>
     )
 }
 
