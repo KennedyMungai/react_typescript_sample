@@ -4,7 +4,7 @@ const EventComponent: React.FC = () =>
 {
     const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) =>
     {
-        console.log(e)
+        console.log(e.target.value)
     }
 
     return (
