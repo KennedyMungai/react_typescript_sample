@@ -7,11 +7,20 @@ const EventComponent: React.FC = () =>
         console.log(e.target.value)
     }
 
+    const onDragStart = () =>
+    {
+
+    }
+
     return (
-        <input
-            type="text"
-            onChange={onChangeHandler}
-        />
+        <>
+            <input
+                type="text"
+                onChange={onChangeHandler}
+            />
+            <div className="" draggable onDragStart={onDragStart}>Drag Me</div>
+        </>
+
     )
 }
 
